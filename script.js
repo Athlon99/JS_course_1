@@ -23,6 +23,7 @@
 
 'use strict';
 
+const prompt = require('prompt-sync')();
 const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
 const personalMovieDB = {
