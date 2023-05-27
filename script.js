@@ -21,7 +21,7 @@
 
 Проверить, чтобы все работало без ошибок в консоли */
 
-'use strict';
+/* 'use strict';
 
 const prompt = require('prompt-sync')();
 const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
@@ -42,4 +42,14 @@ const a = prompt('Один из последних просмотренных ф
 personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
 
-console.log(personalMovieDB);
+console.log(personalMovieDB); */
+
+// ______Coding Exercise 3 _____
+
+'use strict';
+function firstTask() {
+    for ( let i = 5; i <=10; i++) {
+    console.log(i);
+    }
+}
+firstTask();
