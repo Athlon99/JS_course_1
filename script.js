@@ -79,7 +79,7 @@ thirdTask(); */
 
 // ______Coding Exercise 3 __ Task 4 ___
 
-'use strict';
+/* 'use strict';
 function fourthTask() {
     let i = 2;    
     while( i<=10) {
@@ -89,4 +89,22 @@ function fourthTask() {
     i++;
     }
 }
-fourthTask();
+fourthTask(); */
+
+// ______Coding Exercise 3 __ Task 5 ___
+
+'use strict';
+
+function fifthTask() {
+    const arrayOfNumbers = [];
+    
+
+    // Пишем решение вот тут
+    for (let i=5; i<=10; i++) {
+        arrayOfNumbers[i-5]=i;
+    }
+    console.log(arrayOfNumbers);
+    // Не трогаем
+    return arrayOfNumbers;
+}
+fifthTask();
