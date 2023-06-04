@@ -44,12 +44,23 @@ personalMovieDB.movies[c] = d;
 
 console.log(personalMovieDB); */
 
-// ______Coding Exercise 3 _____
+// ______Coding Exercise 3 __ Task 1 ___
 
-'use strict';
+/* 'use strict';
 function firstTask() {
     for ( let i = 5; i <=10; i++) {
     console.log(i);
     }
 }
-firstTask();
+firstTask(); */
+
+// ______Coding Exercise 3 __ Task 2 ___
+
+'use strict';
+function secondTask() {
+    for ( let i=20; i>=10; i--) {
+        if (i===13) break;
+        console.log (i);
+    }
+}
+secondTask();
