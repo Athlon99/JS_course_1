@@ -65,9 +65,9 @@ function secondTask() {
 }
 secondTask(); */
 
-// ______Coding Exercise 3 __ Task 2 ___
+// ______Coding Exercise 3 __ Task 3 ___
 
-'use strict';
+/* 'use strict';
 function thirdTask() {
     for ( let i = 2; i<=10; i++) {
         if (i%2===0) {
@@ -75,5 +75,18 @@ function thirdTask() {
         }
     }
 }
-thirdTask();
+thirdTask(); */
 
+// ______Coding Exercise 3 __ Task 4 ___
+
+'use strict';
+function fourthTask() {
+    let i = 2;    
+    while( i<=10) {
+        if (i%2===0) {
+            console.log (i);
+        }
+    i++;
+    }
+}
+fourthTask();
