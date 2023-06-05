@@ -1,18 +1,14 @@
-function secondTask() {
+function thirdTask() {
     // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
     const data = [5, 10, 'Shopping', 20, 'Homework'];
+    const result = [];
 
     // Пишем решение вот тут
-    for (let i=0; i<data.length; i++) {
-        if (typeof(data[i])==='number') {
-            data[i]=data[i]*2;
+        for (let i=data.length-1; i>=0; i--) {
+            result [data.length-i-1]=data[i];
         }
-        else if (typeof(data[i])==='string') {
-            data[i]=data[i]+' - done';
-        }
-    }
-    console.log(data);
+    console.log (result);
     // Не трогаем
-    return data;
+    return result;
 }
-secondTask();
+thirdTask();
