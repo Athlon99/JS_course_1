@@ -111,7 +111,7 @@ fifthTask(); */
 
 // ______Coding Exercise 4 __ Task 1 ___
 
-function firstTask() {
+f/* unction firstTask() {
     // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
     const arr = [3, 5, 8, 16, 20, 23, 50];
     const result = [];
@@ -124,4 +124,25 @@ function firstTask() {
     // Не трогаем
     return result;
 }
-firstTask();
+firstTask(); */
+
+// ______Coding Exercise 4 __ Task 2 ___
+
+function secondTask() {
+    // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+    const data = [5, 10, 'Shopping', 20, 'Homework'];
+
+    // Пишем решение вот тут
+    for (let i=0; i<data.length; i++) {
+        if (typeof(data[i])==='number') {
+            data[i]=data[i]*2;
+        }
+        else if (typeof(data[i])==='string') {
+            data[i]=data[i]+' - done';
+        }
+    }
+    console.log(data);
+    // Не трогаем
+    return data;
+}
+secondTask();
