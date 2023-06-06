@@ -149,7 +149,7 @@ secondTask();
  */
 // ______Coding Exercise 4 __ Task 3 ___
 
-function thirdTask() {
+/* function thirdTask() {
     // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
     const data = [5, 10, 'Shopping', 20, 'Homework'];
     const result = [];
@@ -162,4 +162,21 @@ function thirdTask() {
     // Не трогаем
     return result;
 }
-thirdTask();
+thirdTask(); */
+
+// ______Coding Exercise 5____
+
+const lines = 6;
+let result = '';
+// Проверяется именно переменная result, формируйте строку в ней
+    for (let i=1; i<=lines; i++) {
+        for (let s=0; s<lines-i; s++) {
+            result += " ";
+        }
+        for (let j=0; j<=i*2-2; j++) {
+            result += "*";
+        }
+        result += '\n';
+    }
+console.log(result);
+   

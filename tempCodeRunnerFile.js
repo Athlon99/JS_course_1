@@ -1,14 +1,13 @@
-function thirdTask() {
-    // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
-    const data = [5, 10, 'Shopping', 20, 'Homework'];
-    const result = [];
-
-    // Пишем решение вот тут
-        for (let i=data.length-1; i>=0; i--) {
-            result [data.length-i-1]=data[i];
+const lines = 6;
+let result = '';
+// Проверяется именно переменная result, формируйте строку в ней
+    for (let i=1; i<=lines; i++) {
+        for (let s=0; s<lines-i; s++) {
+            result += " ";
         }
-    console.log (result);
-    // Не трогаем
-    return result;
-}
-thirdTask();
+        for (let j=0; j<=i*2-2; j++) {
+            result += "*";
+        }
+        result += '\n';
+    }
+console.log(result);
