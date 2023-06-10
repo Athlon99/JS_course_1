@@ -182,13 +182,24 @@ console.log(result); */
 
 // ______Coding Exercise 6____Task 1 
 
-function sayHello(name) {
+/* function sayHello(name) {
     return `Privet, ${name}!`;
 }
 
 let a=sayHello('Pavel');
-console.log(a);
+console.log(a); */
 
+// ______Coding Exercise 6____Task 2
+
+function returnNeighboringNumbers(num) {
+    const numbers = [];
+    for (let i=0; i<3; i++) {
+        numbers[i]=num-1+i;
+    }
+    return numbers;
+}
+let a = returnNeighboringNumbers(20);
+console.log (a);
 
 
 
