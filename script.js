@@ -111,7 +111,7 @@ fifthTask(); */
 
 // ______Coding Exercise 4 __ Task 1 ___
 
-f/* unction firstTask() {
+/* function firstTask() {
     // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
     const arr = [3, 5, 8, 16, 20, 23, 50];
     const result = [];
@@ -166,7 +166,7 @@ thirdTask(); */
 
 // ______Coding Exercise 5____
 
-const lines = 6;
+/* const lines = 6;
 let result = '';
 // Проверяется именно переменная result, формируйте строку в ней
     for (let i=1; i<=lines; i++) {
@@ -178,5 +178,17 @@ let result = '';
         }
         result += '\n';
     }
-console.log(result);
-   
+console.log(result); */
+
+// ______Coding Exercise 6____Task 1 
+
+function sayHello(name) {
+    return `Privet, ${name}!`;
+}
+
+let a=sayHello('Pavel');
+console.log(a);
+
+
+
+
