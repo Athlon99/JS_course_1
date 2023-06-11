@@ -1,9 +1,12 @@
-function returnNeighboringNumbers(num) {
-    const numbers = [];
-    for (let i=0; i<3; i++) {
-        numbers[i]=num-1+i;
+function getMathResult(a, b) {
+    let result=a;
+    if (b>0 && typeof(b) === 'number') {
+        for (let i=2; i<b+1; i++) {
+            result += "---"+a*i;
+        }
+
     }
-    return numbers;
+    return result;
 }
-let a = returnNeighboringNumbers(20);
-console.log (a);
+let c = getMathResult (2, 10);
+console.log (c);

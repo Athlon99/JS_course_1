@@ -191,7 +191,7 @@ console.log(a); */
 
 // ______Coding Exercise 6____Task 2
 
-function returnNeighboringNumbers(num) {
+/* function returnNeighboringNumbers(num) {
     const numbers = [];
     for (let i=0; i<3; i++) {
         numbers[i]=num-1+i;
@@ -199,7 +199,21 @@ function returnNeighboringNumbers(num) {
     return numbers;
 }
 let a = returnNeighboringNumbers(20);
-console.log (a);
+console.log (a); */
+
+// ______Coding Exercise 6____Task 3
+
+function getMathResult(a, b) {
+    let result=a;
+    if (b>0 && typeof(b) === 'number') {
+        for (let i=2; i<b+1; i++) {
+            result += "---"+a*i;
+        }
+    }
+    return result;
+}
+let c = getMathResult (2, 10);
+console.log (c);
 
 
 
