@@ -278,7 +278,7 @@ false - выводит в консоль главный объект прогр�
 genres
 P.S. Функции вызывать не обязательно */
 
-
+/* 
 
 let numberOfFilms;
 const prompt = require('prompt-sync')();
@@ -350,3 +350,25 @@ function writeYourGenres() {
 
 writeYourGenres();
 
+ */
+
+// ______Coding Exercise 7____Task 1 
+
+function calculateVolumeAndArea(length) {
+    if (typeof (length) !== 'number' || length < 0 || !Number.isInteger(length)) {
+        return "При вычислении произошла ошибка";
+    }
+
+    let volume = 0,
+        area = 0;
+
+    volume = length * length * length;
+    // length ** 3 - это тоже самое, что и выше или варианты через цикл.
+    // ** - это оператор степени, напоминаю. Но онлайн редактор его не принимает =/
+    area = 6 * (length * length);
+
+    return `Объем куба: ${volume}, площадь всей поверхности: ${area}`;
+}
+
+let m = calculateVolumeAndArea(5);
+console.log (m);
