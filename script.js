@@ -375,7 +375,7 @@ writeYourGenres();
 
 // ______Coding Exercise 7____Task 2 
 
-function getCoupeNumber(seatNumber) {
+/* function getCoupeNumber(seatNumber) {
     if (typeof (seatNumber) !== 'number' || seatNumber < 0 || !Number.isInteger(seatNumber)) {
         return "Ошибка. Проверьте правильность введенного номера места";
     }
@@ -389,5 +389,38 @@ function getCoupeNumber(seatNumber) {
 }
 
 let m=getCoupeNumber(33);
-console.log(m);
+console.log(m); */
 
+// ______Coding Exercise 8____Task 1 
+
+function getTimeFromMinutes(minutesTotal) {
+    if (typeof(minutesTotal) !== 'number' || minutesTotal < 0 || !Number.isInteger(minutesTotal)) {
+        return "Ошибка, проверьте данные";
+    }
+
+    const hours = Math.floor(minutesTotal / 60);
+    const minutes = minutesTotal % 60;
+
+    let hoursStr = '';
+
+    switch (hours) {
+        case 0: 
+            hoursStr = 'часов';
+            break;
+        case 1:
+            hoursStr = 'час';
+            break;
+        case 2:
+        case 3:
+        case 4:
+            hoursStr = 'часа';
+            break;
+        default:
+            hoursStr = 'часов';
+    }
+
+    return `Это ${hours} ${hoursStr} и ${minutes} минут`;
+}
+
+let m=getTimeFromMinutes(180);
+console.log(m);
