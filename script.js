@@ -427,7 +427,7 @@ console.log(m); */
 
 // ______Coding Exercise 8____Task 2 
 
-function findMaxNumber(a, b ,c, d) {
+/* function findMaxNumber(a, b ,c, d) {
     // Самое простое - это использовать Math.max :)
     // А оптимизировать такую проверку мы научимся совсем скоро
     if (typeof(a) !== 'number' ||
@@ -443,4 +443,35 @@ function findMaxNumber(a, b ,c, d) {
 let m = findMaxNumber(1, 5, 6.6, 10.5);
 let n = findMaxNumber(1, 5, '6', '10');
 console.log(m);
-console.log(n);
+console.log(n); */
+
+// ______Coding Exercise 9____
+
+function fib(num) {
+    if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
+        return "";
+    }
+
+    let result = '';
+    let first = 0;
+    let second = 1;
+
+    for (let i = 0; i < num; i++) {
+        if (i + 1 === num) {
+            result += `${first}`;
+            // Без пробела в конце
+        } else {
+            result += `${first} `;
+        }
+
+        let third = first + second;
+        first = second;
+        second = third;
+    }
+
+    return result;
+}
+
+m=fib(10);
+console.log (m);
+
