@@ -444,7 +444,7 @@ let m = findMaxNumber(1, 5, 6.6, 10.5);
 let n = findMaxNumber(1, 5, '6', '10');
 console.log(m);
 console.log(n); */
-
+/* 
 // ______Coding Exercise 9____
 
 function fib(num) {
@@ -475,3 +475,60 @@ function fib(num) {
 m=fib(10);
 console.log (m);
 
+ */
+
+/* function printOddNumbers(x) {
+    for ( let i=1; i<=x; i++) {
+      if (i%2===0) continue;
+      console.log (i);
+    }
+  }
+  printOddNumbers(5); */
+
+  // ______Coding Exercise 10__________________________________________________________________________________
+
+  const personalPlanPeter = {
+    name: "Peter",
+    age: "29",
+    skills: {
+        languages: ['ru', 'eng'],
+        programmingLangs: {
+            js: '20%',
+            php: '10%'
+        },
+        exp: '1 month'
+    },
+    showAgeAndLangs: function(plan) {
+        const {age} = plan;
+        const {languages} = plan.skills;
+        let str = `Мне ${age} и я владею языками: `;
+
+        languages.forEach(function(lang) {
+            str += `${lang.toUpperCase()} `;
+        });
+
+        return str;
+    }
+};
+
+personalPlanPeter.showAgeAndLangs(personalPlanPeter);
+
+function showExperience(plan) {
+    const {exp} = plan.skills;
+    return exp;
+}
+
+showExperience(personalPlanPeter);
+
+function showProgrammingLangs(plan) {
+    let str = '';
+    const {programmingLangs} = plan.skills;
+    for (let key in programmingLangs) {
+        str += `Язык ${key} изучен на ${programmingLangs[key]}\n`
+    }
+
+    return str;
+}
+
+showProgrammingLangs(personalPlanPeter);
+  

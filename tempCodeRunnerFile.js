@@ -1,27 +1,7 @@
-function fib(num) {
-    if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
-        return "";
+function printOddNumbers(x) {
+    for ( let i=1; i<=x; i++) {
+      if (i%2===0) continue;
+      console.log (i);
     }
-
-    let result = '';
-    let first = 0;
-    let second = 1;
-
-    for (let i = 0; i < num; i++) {
-        if (i + 1 === num) {
-            result += `${first}`;
-            // Без пробела в конце
-        } else {
-            result += `${first} `;
-        }
-
-        let third = first + second;
-        first = second;
-        second = third;
-    }
-
-    return result;
-}
-
-m=fib(10);
-console.log (m);
+  }
+  printOddNumbers(5);
