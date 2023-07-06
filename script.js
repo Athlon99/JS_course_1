@@ -511,14 +511,14 @@ console.log (m);
     }
 };
 
-personalPlanPeter.showAgeAndLangs(personalPlanPeter);
+let a = personalPlanPeter.showAgeAndLangs(personalPlanPeter);
 
 function showExperience(plan) {
     const {exp} = plan.skills;
     return exp;
 }
 
-showExperience(personalPlanPeter);
+let b = showExperience(personalPlanPeter);
 
 function showProgrammingLangs(plan) {
     let str = '';
@@ -530,5 +530,9 @@ function showProgrammingLangs(plan) {
     return str;
 }
 
-showProgrammingLangs(personalPlanPeter);
+let c = showProgrammingLangs(personalPlanPeter);
+
+console.log (a);
+console.log (b);
+console.log (c);
   
