@@ -538,7 +538,7 @@ console.log (c); */
 
   // ______Coding Exercise 11__________________________________________________________________________________
 
-  const family = ['Peter', 'Ann', 'Alex', 'Linda'];
+/*   const family = ['Peter', 'Ann', 'Alex', 'Linda'];
 
   function showFamily(arr) {
       let str = '';
@@ -564,4 +564,28 @@ console.log (c); */
   }
   
   let b = standardizeStrings(favoriteCities);
-  console.log (b);
+  console.log(b); */
+
+  // ______Coding Exercise 12 Task 1__________________________________________________________________________________
+
+const someString = 'This is some strange string';
+
+function reverse(str) {
+    if (typeof(str) !== 'string') {
+        return "Ошибка!";
+    }
+    // Самый оптимальный вариант решения
+    return str.split('').reverse().join('');
+
+    // Решение при помощи цикла
+    // let newStr = '';
+    // for (let i = str.length - 1; i >= 0; i--) {
+    //     newStr += str[i];
+    // }
+    // return newStr
+}
+
+a = reverse(someString);
+console.log(a);
+
+// ______Coding Exercise 12 Task 2__________________________________________________________________________________

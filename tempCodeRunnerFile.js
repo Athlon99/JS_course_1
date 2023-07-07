@@ -1,27 +1,19 @@
- const family = ['Peter', 'Ann', 'Alex', 'Linda'];
+const someString = 'This is some strange string';
 
-  function showFamily(arr) {
-      let str = '';
-  
-      arr.length === 0 ? str = 'Семья пуста' : str = 'Семья состоит из: ';
-  
-      arr.forEach(member => {
-          str += `${member} `
-      });
-  
-      return str;
-  }
-  
-  let a = showFamily(family);
-  console.log(a);
-  
-  const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
-  
-  function standardizeStrings(arr) {
-      arr.forEach(city => {
-          console.log(city.toLowerCase())
-      })
-  }
-  
-  let b = standardizeStrings(favoriteCities);
-  console.log (b);
+function reverse(str) {
+    if (typeof(str) !== 'string') {
+        return "Ошибка!";
+    }
+    // Самый оптимальный вариант решения
+    return str.split('').reverse().join('');
+
+    // Решение при помощи цикла
+    // let newStr = '';
+    // for (let i = str.length - 1; i >= 0; i--) {
+    //     newStr += str[i];
+    // }
+    // return newStr
+}
+
+a = reverse(someString);
+console.log(a);
