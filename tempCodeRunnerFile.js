@@ -1,19 +1,26 @@
-const someString = 'This is some strange string';
+const baseCurrencies = ['USD', 'EUR'];
+const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
 
-function reverse(str) {
-    if (typeof(str) !== 'string') {
-        return "Ошибка!";
-    }
-    // Самый оптимальный вариант решения
-    return str.split('').reverse().join('');
+function availableCurr(arr, missingCurr) {
+    let str = '';
+    arr.length === 0 ? str = 'Нет доступных валют' : str = 'Доступные валюты:\n';
 
-    // Решение при помощи цикла
-    // let newStr = '';
-    // for (let i = str.length - 1; i >= 0; i--) {
-    //     newStr += str[i];
+    arr.forEach(function(curr, i) {
+        if (curr !== missingCurr) {
+            str += `${curr}\n`;
+        }
+    });
+
+    // Или
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] === missingCurr) {
+    //         continue;
+    //     }
+    //     str += `${arr[i]}\n`;
     // }
-    // return newStr
+
+    return str;
 }
 
-a = reverse(someString);
+a = availableCurr([...baseCurrencies, ...additionalCurrencies], 'CNY');
 console.log(a);
