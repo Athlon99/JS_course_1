@@ -590,7 +590,7 @@ console.log(a); */
 
 // ______Coding Exercise 12 Task 2__________________________________________________________________________________
 
-const baseCurrencies = ['USD', 'EUR'];
+/* const baseCurrencies = ['USD', 'EUR'];
 const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
 
 function availableCurr(arr, missingCurr) {
@@ -615,4 +615,6 @@ function availableCurr(arr, missingCurr) {
 }
 
 a = availableCurr([...baseCurrencies, ...additionalCurrencies], 'CNY');
-console.log(a);
+console.log(a); */
+
+
