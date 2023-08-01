@@ -130,7 +130,7 @@ firstTask(); */
 
 // ______Coding Exercise 4 __ Task 2 ___
 
-f/* unction secondTask() {
+/* function secondTask() {
     // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
     const data = [5, 10, 'Shopping', 20, 'Homework'];
 
@@ -617,4 +617,53 @@ function availableCurr(arr, missingCurr) {
 a = availableCurr([...baseCurrencies, ...additionalCurrencies], 'CNY');
 console.log(a); */
 
+// ______Coding Exercise 13__________________________________________________________________________________
 
+const shoppingMallData = {
+    shops: [
+        {
+            width: 10,
+            length: 5
+        },
+        {
+            width: 15,
+            length: 7
+        },
+        {
+            width: 20,
+            length: 5
+        },
+        {
+            width: 8,
+            length: 10
+        }
+    ],
+    height: 5,
+    moneyPer1m3: 30,
+    budget: 50000
+}
+
+function isBudgetEnough(data) {
+    let square = 0;
+    let volume = 0;
+
+    data.shops.forEach(shop => {
+        square += shop.width * shop.length;
+    });
+
+    volume = data.height * square;
+
+    console.log(`square = ${square}`);
+    console.log(`volume = ${volume}`);
+    console.log(`expenses = ${volume * data.moneyPer1m3}`);
+
+    if (data.budget - (volume * data.moneyPer1m3) >= 0) {
+        return 'Бюджета достаточно';
+    } else {
+        return 'Бюджета недостаточно';
+    }
+
+
+}
+
+isBudgetEnough(shoppingMallData);
