@@ -699,7 +699,7 @@ console.log(spinWords('123 1234567 12 123456789')); */
 
 //_______________________Task: Function Reverse String_________________________________________________________________________________
 
-function solution(str){
+/* function solution(str){
     let newStr = "";
     for (let i = str.length -1; i >= 0; i--) {
       newStr += str[i];
@@ -708,6 +708,19 @@ function solution(str){
   }
   
   solution('world');
-  solution('word');
+  solution('word'); */
 
-  
+
+  //_______________________Task: Function Remove First and Last Character_________________________________________________________________________________
+
+  function removeChar(str){
+    let newStr = "";
+    for (let i = 0; i < str.length; i++) {
+      if (i !== 0 && i !== str.length-1) {
+        newStr += str[i]
+      }
+    }
+     return newStr;
+   }
+
+   removeChar('12345678');
