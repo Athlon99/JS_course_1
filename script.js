@@ -619,7 +619,7 @@ console.log(a); */
 
 // ______Coding Exercise 13__________________________________________________________________________________
 
-const shoppingMallData = {
+/* const shoppingMallData = {
     shops: [
         {
             width: 10,
@@ -667,3 +667,47 @@ function isBudgetEnough(data) {
 }
 
 isBudgetEnough(shoppingMallData);
+ */
+
+//_______________________Task: Function spinWords_________________________________________________________________________________
+/* 
+function spinWords(string) {
+    let sentenceArray = string.split(' ');
+    let result = '';
+    let word, wordReversed;
+
+    for (let i = 0; i < sentenceArray.length; i++) {
+        word = sentenceArray[i];
+        if (i > 0) {
+            result += ' ';
+        }
+        if (sentenceArray[i].length >= 5) {
+                wordReversed = '';
+                for (let j = word.length-1; j >= 0; j--) {
+                wordReversed += word[j];
+            }
+            result += wordReversed;
+        } else {
+            result += word;
+        }
+    }
+    return result;
+
+}
+
+console.log(spinWords('123 1234567 12 123456789')); */
+
+//_______________________Task: Function Reverse String_________________________________________________________________________________
+
+function solution(str){
+    let newStr = "";
+    for (let i = str.length -1; i >= 0; i--) {
+      newStr += str[i];
+    }
+    return newStr;
+  }
+  
+  solution('world');
+  solution('word');
+
+  
