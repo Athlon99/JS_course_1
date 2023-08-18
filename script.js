@@ -713,7 +713,7 @@ console.log(spinWords('123 1234567 12 123456789')); */
 
   //_______________________Task: Function Remove First and Last Character_________________________________________________________________________________
 
-  function removeChar(str){
+/*   function removeChar(str){
     let newStr = "";
     for (let i = 0; i < str.length; i++) {
       if (i !== 0 && i !== str.length-1) {
@@ -723,4 +723,14 @@ console.log(spinWords('123 1234567 12 123456789')); */
      return newStr;
    }
 
-   removeChar('12345678');
+   removeChar('12345678'); */
+
+ //_______________________Task: Function Is it a Palindrome?_________________________________________________________________________________
+ 
+ function isPalindrome(x) {
+    const lowercaseInput = x.toLowerCase();
+    const forward = lowercaseInput;
+    const backward = lowercaseInput.split("").reverse().join("");
+    return forward === backward;
+  }  
+  isPalindrome('Abba');
